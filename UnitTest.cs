@@ -7,24 +7,25 @@ using MoodAnalyzerProblem;
 
 namespace MoodAnalyzerProblem
 {
-        [TestClass]
-        public class UnitTest
+    [TestClass]
+    public class UnitTest
+    {
+        [TestMethod]
+        public void TestMethod1()
         {
-            [TestMethod]
-            public void Mood_Success()
-            {
-                //Arrange
-                string h = "Sad";
-            MoodAnalyzer m1 = new MoodAnalyzer();
-                string expectedOutput = "SAD";
+            //Arrange
 
-                //Act 
-                string actualOutput = m1.Mood(h);
+            string s1 = "Sad";
+            MoodAnalyzer m1 = new MoodAnalyzer();
+            string expectedOutput = "Sad";
+
+            //Act
+            string actualOutput = m1.CheckMoodAnalyzer(s1);
 
             //Assert
-              Assert.AreEqual(expectedOutput, actualOutput);
+            Assert.AreEqual(expectedOutput, actualOutput);
 
 
-            }
         }
+    }
 }
