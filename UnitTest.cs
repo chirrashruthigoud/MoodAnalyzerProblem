@@ -13,19 +13,15 @@ namespace MoodAnalyzerProblem
         [TestMethod]
         public void TestMethod1()
         {
-            //Arrange
+            // Arrange
+            //MoodAnalyzer m1 = new MoodAnalyzer("happy");
+            MoodAnalyzer m1 = new MoodAnalyzer("Sad");
 
-            string s1 = "Happy";
-            MoodAnalyzer m1 = new MoodAnalyzer();
-            string expectedOutput = "Happy";
+            // Act
+            var result = m1.mood();
 
-            //Act
-            string actualOutput = m1.CheckMoodAnalyzer(s1);
-
-            //Assert
-            Assert.AreEqual(expectedOutput, actualOutput);
-
-
+            // Assert
+            Assert.AreEqual("Sad", result);
         }
     }
 }
