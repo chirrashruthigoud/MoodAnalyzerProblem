@@ -11,21 +11,21 @@ namespace MoodAnalyzerProblem
     [TestClass]
     public class UnitTest1
     {
-     /*   [TestMethod]
+        [TestMethod]
         public void MoodAnalyser_Success()
         {
             //Arrange
-            string mood = "";
+            string mood = "Happy";
             MoodAnalyzer m1 = new MoodAnalyzer();
-            string expectedOutput = "No Such Method Error";
+            string expectedOutput = "Happy";
 
-            //Act
+            //Act 
             string actualOutput = m1.check(mood);
-            Console.WriteLine(actualOutput);
 
             //Assert
             Assert.AreEqual(expectedOutput, actualOutput);
-        }*/
+        }
 
-    }
+
+        }
 }
