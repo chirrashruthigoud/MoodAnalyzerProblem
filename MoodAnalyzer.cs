@@ -14,11 +14,11 @@ namespace MoodAnalyzerProblem
             {
                 throw new Exception("No Such Class Error");
             }
-            /*  else if(mood == "")
-              {
-                  throw new Exception("No Such Method Error");
-              }
-            */
+            else if (mood == "")
+            {
+                throw new Exception("Null Exception");
+            }
+
             else if (mood == "Happy" | mood == "happy")
             {
                 Console.WriteLine("Happy");
