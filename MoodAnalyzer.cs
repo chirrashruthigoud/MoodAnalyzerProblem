@@ -14,7 +14,7 @@ namespace MoodAnalyzerProblem
             if (mood == null)
             {
                 Console.WriteLine("Invalid Mood");
-                // throw new Exception("Invalid Mood Found Exception");
+                throw new Exception("Invalid Mood Found Exception");
             }
             else if (mood == "")
             {
