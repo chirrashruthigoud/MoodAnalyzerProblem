@@ -14,12 +14,13 @@ namespace MoodAnalyzerProblem
         public void MoodAnalyser_Success()
         {
             //Arrange
+            string mood = "";
             MoodAnalyzer m1 = new MoodAnalyzer();
-            MoodAnalyzer m2 = new MoodAnalyzer();
-            object expectedOutput = "Object are Different";
+            string expectedOutput = "No Such Class Error";
 
-            //Act 
-            object actualOutput = m1.Equals(m2);
+            //Act
+            string actualOutput = m1.check(mood);
+            Console.WriteLine(actualOutput);
 
             //Assert
             Assert.AreEqual(expectedOutput, actualOutput);
