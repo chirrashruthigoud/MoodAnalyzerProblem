@@ -17,6 +17,8 @@ namespace MoodAnalyzerProblem
             {
                 Console.WriteLine(e.Message);
             }
+            Console.WriteLine(e.Message);
+            }
 
         }
     }   
