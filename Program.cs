@@ -6,17 +6,26 @@ namespace MoodAnalyzerProblem
     {
         public static void Main(string[] args)
         {
-            /*   MoodAnalyzer m1 = new MoodAnalyzer();
-            MoodAnalyzer m2 = new MoodAnalyzer("Happy");
-            if(m1.Equals(m2))
+            /* Console.WriteLine("Enter the Mood : ");
+            string mood = Console.ReadLine();
+            MoodAnalyser m1 = new MoodAnalyser(mood);
+            Type t = typeof(MoodAnalyser);
+            ConstructorInfo[] info = t.GetConstructors(BindingFlags.Public|BindingFlags.Instance);
+            foreach (ConstructorInfo info2 in info)
             {
-                Console.WriteLine("Both Objects Are Equal");
-            }
-            else 
-            {
-                Console.WriteLine("Both Objects are Different");
-            }*/
-         
+                Console.WriteLine(info2.Name);
+            } */
+
+            /* try
+               {
+                   MoodAnalyser m1 = new MoodAnalyser();
+                   m1.check(mood);
+               }
+               catch(Exception e) 
+               {
+                   Console.WriteLine(e.Message);
+               } */
+
         }
     }   
 }
