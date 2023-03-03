@@ -8,18 +8,18 @@ using MoodAnalyzerProblem;
 namespace MoodAnalyzerProblem
 {
     [TestClass]
-    public class MoodTest
+    public class UnitTest1
     {
         [TestMethod]
         public void MoodAnalyser_Success()
         {
             //Arrange
-            string s1 = "";
             MoodAnalyzer m1 = new MoodAnalyzer();
-            string expectedOutput = "HAPPY";
+            MoodAnalyzer m2 = new MoodAnalyzer();
+            object expectedOutput = "Object are Different";
 
-            //Act
-            string actualOutput = m1.Fun(s1);
+            //Act 
+            object actualOutput = m1.Equals(m2);
 
             //Assert
             Assert.AreEqual(expectedOutput, actualOutput);
