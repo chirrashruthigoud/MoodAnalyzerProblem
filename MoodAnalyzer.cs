@@ -19,6 +19,6 @@ namespace MoodAnalyzerProblem
         {
             return this.n;
         }
-    
+
     }
 }
