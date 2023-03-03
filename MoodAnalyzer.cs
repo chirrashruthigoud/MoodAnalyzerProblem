@@ -10,8 +10,14 @@ namespace MoodAnalyzerProblem
     {
         public string check(string mood)
         {
-            Console.WriteLine("Mood : " + mood);
-
+            if (mood == "Happy" | mood == "happy")
+            {
+                return mood;
+            }
+            else
+            {
+                return mood;
+            }
         }
     }
 }
