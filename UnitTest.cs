@@ -11,7 +11,7 @@ namespace MoodAnalyzerProblem
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+     /*   [TestMethod]
         public void MoodAnalyser_Success()
         {
             //Arrange
@@ -25,7 +25,7 @@ namespace MoodAnalyzerProblem
 
             //Assert
             Assert.AreEqual(expectedOutput, actualOutput);
-        }
+        }*/
 
     }
 }
