@@ -8,16 +8,16 @@ using MoodAnalyzerProblem;
 namespace MoodAnalyzerProblem
 {
     [TestClass]
-    public class UnitTest
+    public class MoodTest
     {
         [TestMethod]
         public void TestMethod1()
         {
             //Arrange
 
-            string s1 = "Sad";
+            string s1 = "Happy";
             MoodAnalyzer m1 = new MoodAnalyzer();
-            string expectedOutput = "Sad";
+            string expectedOutput = "Happy";
 
             //Act
             string actualOutput = m1.CheckMoodAnalyzer(s1);
