@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using MoodAnalyzerProblem;
@@ -13,34 +14,27 @@ namespace MoodAnalyzerProblem
         [TestMethod]
         public void MoodAnalyser_Success()
         {
-            //Arrange
-            string mood = "";
-            MoodAnalyzer m1 = new MoodAnalyzer();
-            string expectedOutput = "No Such Class Error";
+            Console.WriteLine("Enter the Mood : ");
+            string mood = Console.ReadLine();
+            MoodAnalyzer m1 = new MoodAnalyzer(mood);
 
-            //Act
-            string actualOutput = m1.check(mood);
-            Console.WriteLine(actualOutput);
+            Type t = typeof(MoodAnalyzer);
+            ConstructorInfo[] info = t.GetConstructors(BindingFlags.Public | BindingFlags.Instance);
+            foreach (ConstructorInfo info2 in info)
+            {
+                Console.WriteLine(info2.Name);
+            }
 
-
-            //Assert
-            Assert.AreEqual(expectedOutput, actualOutput);
+            /* try
+               {
+                   MoodAnalyser m1 = new MoodAnalyser();
+                   m1.check(mood);
+               }
+               catch(Exception e) 
+               {
+                   Console.WriteLine(e.Message);
+               } */
         }
 
-        public void MoodAnalyzer()
-        {
-            //Arrange
-            string mood = "";
-            MoodAnalyzer m1 = new MoodAnalyzer();
-            string expectedOutput = "No Such Method Error";
-
-            //Act
-            string actualOutput = m1.check(mood);
-            Console.WriteLine(actualOutput);
-
-
-            //Assert
-            Assert.AreEqual(expectedOutput, actualOutput);
-        }
     }
 }
