@@ -22,6 +22,23 @@ namespace MoodAnalyzerProblem
             string actualOutput = m1.check(mood);
             Console.WriteLine(actualOutput);
 
+
+            //Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
+        }
+
+        public void MoodAnalyzer()
+        {
+            //Arrange
+            string mood = "";
+            MoodAnalyzer m1 = new MoodAnalyzer();
+            string expectedOutput = "No Such Method Error";
+
+            //Act
+            string actualOutput = m1.check(mood);
+            Console.WriteLine(actualOutput);
+
+
             //Assert
             Assert.AreEqual(expectedOutput, actualOutput);
         }
